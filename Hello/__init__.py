@@ -6,8 +6,9 @@
 # - add azure-functions-durable to requirements.txt
 # - run pip install -r requirements.txt
 
-import logging
+import logging, time
 
 
 def main(name: str) -> str:
+    time.sleep(1)
     return f"Hello {name}!"
